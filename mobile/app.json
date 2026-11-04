@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "PilulAmi",
+    "slug": "PilulAmi",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "fr.eemi.pilulami"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0F5C55",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "fr.eemi.pilulami"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-notifications",
+        {
+          "color": "#0F5C55"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "PilulAmi a besoin de vos photos pour lire l’ordonnance.",
+          "cameraPermission": "PilulAmi a besoin de l’appareil photo pour scanner l’ordonnance."
+        }
+      ]
+    ],
+    "scheme": "pilulami",
+    "backgroundColor": "#FBF7F0"
+  }
+}
